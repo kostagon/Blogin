@@ -195,7 +195,7 @@ img {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr .5fr;
+  grid-template-columns: autofit 1fr .5fr;
   grid-template-rows: 1fr .5fr;
   grid-template-areas: "image1 image2"
                        "image3 .";
