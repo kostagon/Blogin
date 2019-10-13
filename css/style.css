@@ -427,10 +427,31 @@ header .logo {
   }
 
   .second-panel .images-wrapper {
-    grid-template-columns: 1fr;
-    width: 550px;
+    grid-template-columns: .5fr;
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .images-wrapper {
+    margin-left: 0;
+  }
+  .image {
+    width: 485px;
+    height: 381px;  
+  }
+  .image2 {
+    grid-row: 2 / 3;
+    grid-column: 1/2;
+  }
+  .image3 {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
 }
 
 .main-wrapper .second-panel {
@@ -446,7 +467,7 @@ header .logo {
 @media (max-width: 720px) {
   .second-panel .images-wrapper {
     max-width: 695px;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
   }
 }
 
