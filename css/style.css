@@ -421,28 +421,14 @@ header .logo {
 }
 
 @media (max-width: 550px) {
-  .main-wrapper .first-panel {
-    column-count: 1;
-    column-gap: 0;
-  }
-
-  .second-panel .images-wrapper {
-    grid-template-columns: .5fr;
-  }
-
   .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
-  }
-
-  .images-wrapper {
-    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+    
   }
   .image {
-    width: 485px;
-    height: 381px;  
+    width: 100%;
   }
   .image2 {
     grid-row: 2 / 3;
